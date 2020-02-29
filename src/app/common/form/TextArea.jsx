@@ -9,7 +9,6 @@ const TextArea = ({
   placeholder,
   meta: { touched, error }
 }) => {
-  console.log(`touched:${touched}`);
   return (
     <Form.Field error={touched && !!error}>
       <textarea {...input} placeholder={placeholder} type={type} rows={rows} />
