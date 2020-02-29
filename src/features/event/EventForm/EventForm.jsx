@@ -5,6 +5,7 @@ import { Segment, Form, Button, Grid, Header } from 'semantic-ui-react';
 import { createEvent, updateEvent } from '../eventActions';
 import cuid from 'cuid';
 import TextInput from '../../../app/common/form/TextInput';
+import TextArea from '../../../app/common/form/TextArea';
 
 const mapStateToProps = (state, ownProps) => {
   const eventId = ownProps.match.params.id;
@@ -65,7 +66,8 @@ class EventForm extends Component {
               />
               <Field
                 name="description"
-                component={TextInput}
+                component={TextArea}
+                rows={3}
                 placeholder="Tell us about your event."
               />
 
