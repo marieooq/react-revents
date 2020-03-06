@@ -10,7 +10,7 @@ const SelectInput = ({
   meta: { touched, error }
 }) => {
   return (
-    <Form.Field erro={touched && !!error}>
+    <Form.Field error={touched && !!error}>
       <Select
         value={input.value || null}
         onChange={(e, data) => input.onChange(data.value)}
